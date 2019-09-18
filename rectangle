@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+/*author: Lavinia Spargo
+This program is going to calculate the area and the perimeter of a rectangle with given dimensions*/
+int main()
+{
+    double width = 5.75;
+    double height = 2.25;
+    double perimeter = 0.00;
+    double area = 0.00;
+
+    perimeter = 2 * (height + width);
+    area = width * height;
+
+    printf("The width of the rectangle is %.2f\n The height of the rectangle is %.2f\n The perimeter of the rectangle is %.2f\n The area of the rectangle is %.2f\n", width, height, perimeter, area);
+    return 0;
+}
