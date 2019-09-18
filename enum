@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/*Author: Lavinia Spargo
+Purpose: this program checks the user input against a predefined list of values */
+
+enum MyModules {electronics=1, maths=2, coreEng=3};
+
+int main()
+{
+
+    enum MyModules module;
+    int userInput;
+    printf("Enter the module code you want to check (1 for electronics, 2 for maths, 3 for coreEng):  ");
+    scanf("%d", &userInput); //the user input must be an integer that is compared to the integers in the enum
+    if (module==userInput)
+    {
+        printf("The module entered is currently ongoing: %d",userInput);
+        }
+    else {
+        printf("Module %d is not currently ongoing", userInput);
+    }
+    return 0;
+}
